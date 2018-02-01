@@ -45,8 +45,8 @@ module SessionHelper
 
   # 記憶したURL (もしくはデフォルト値) にリダイレクト
   def redirect_back_or(default)
-    redirect_to(session[:forwarding_url] || url)
-    sessein.delete(:forwarding_url)
+    redirect_to(session[:forwarding_url] || default)
+    session.delete(:forwarding_url)
   end
 
   # アクセスしようとしたURLを覚えておく
