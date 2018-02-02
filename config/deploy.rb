@@ -1,4 +1,4 @@
-server '150.95.202.236:', port: 22, roles: [:app, :web, :db], primary: true
+server '150.95.202.236', port: 22, roles: [:app, :web, :db], primary: true
 
 set :repo_url,        'git@github.com:GupiSakaguchi/sample_app.git'
 set :application,     'sample_app'
@@ -28,6 +28,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 set :rbenv_type, :system
 set :rbenv_ruby, '2.4.1'
+set :rbenv_path, '/home/deploy/.rbenv/versions/2.4.1'
 set :linked_dirs, fetch(:linked_dirs, []).push(
     'log',
     'tmp/pids',
