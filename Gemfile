@@ -32,6 +32,9 @@ gem 'faker', '1.7.3'
 gem 'will_paginate', '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
 
+# Use Unicorn as the app server
+gem 'unicorn'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
@@ -62,5 +65,14 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.18.4'
+  # MySQL adopter
+  gem 'mysql2', '~> 0.3.13'
+end
+
+group :development do
+  gem 'capistrano',         require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
+  gem 'capistrano-rbenv',   require: false
 end
