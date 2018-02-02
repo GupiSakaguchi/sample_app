@@ -28,6 +28,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 set :rbenv_type, :system
 set :rbenv_ruby, '2.4.1'
+set :rbenv_path, '~/.rbenv'
 set :linked_dirs, fetch(:linked_dirs, []).push(
     'log',
     'tmp/pids',
