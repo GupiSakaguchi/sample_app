@@ -36,7 +36,7 @@ install_plugin Capistrano::SCM::Git
 
 require 'capistrano/rails'
 require 'capistrano/bundler'
-require 'capistrano/rvm'
+require 'capistrano/rbenv'
 require 'capistrano/puma'
 
 # following configuration is quoted from https://github.com/seuros/capistrano-puma#usage
