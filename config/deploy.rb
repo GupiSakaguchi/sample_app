@@ -1,4 +1,4 @@
-server '150.95.187.143', port: 22, roles: [:app, :web, :db], primary: true
+server '150.95.182.150', port: 22, roles: [:app, :web, :db], primary: true
 
 set :repo_url,        'git@github.com:GupiSakaguchi/sample_app.git'
 set :application,     'sample_app'
