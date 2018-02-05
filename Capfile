@@ -38,6 +38,7 @@ require 'capistrano/rails'
 require 'capistrano/bundler'
 require 'capistrano/rbenv'
 require 'capistrano/puma'
+require 'capistrano/rails/migrations'
 
 # following configuration is quoted from https://github.com/seuros/capistrano-puma#usage
 install_plugin Capistrano::Puma  # Default puma tasks
