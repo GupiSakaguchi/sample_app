@@ -29,8 +29,8 @@ gem 'bcrypt', '3.1.11'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'faker', '1.7.3'
-gem 'will_paginate', '3.1.6'
-gem 'bootstrap-will_paginate', '1.0.0'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem 'therubyracer'
 
 # Use Unicorn as the app server
