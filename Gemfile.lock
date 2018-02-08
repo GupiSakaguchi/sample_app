@@ -83,6 +83,10 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (>= 2.0, < 4.0)
+    carrierwave (1.2.2)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     childprocess (0.8.0)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.2)
@@ -140,6 +144,10 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
+    mini_magick (4.7.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -149,7 +157,6 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     multi_json (1.13.1)
-    mysql2 (0.3.21)
     nenv (0.3.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -160,6 +167,7 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    pg (0.18.4)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -278,6 +286,7 @@ DEPENDENCIES
   capistrano-rbenv-vars (~> 0.1)
   capistrano3-puma
   capybara (~> 2.13)
+  carrierwave (= 1.2.2)
   coffee-rails (~> 4.2)
   faker (= 1.7.3)
   guard (= 2.13.0)
@@ -286,8 +295,9 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   listen (>= 3.0.5, < 3.2)
+  mini_magick (= 4.7.0)
   minitest-reporters (= 1.1.14)
-  mysql2 (~> 0.3.13)
+  pg
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails-controller-testing (= 1.0.2)

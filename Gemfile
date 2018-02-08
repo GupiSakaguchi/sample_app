@@ -32,6 +32,8 @@ gem 'faker', '1.7.3'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'therubyracer'
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 
 # Use Unicorn as the app server
 gem 'unicorn'
@@ -67,7 +69,8 @@ end
 
 group :production do
   # MySQL adopter
-  gem 'mysql2', '~> 0.3.13'
+  #gem 'mysql2', '~> 0.3.13'
+  gem 'pg'
 end
 
 group :development do
